@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<meta charset="utf-8"/>
+<title>Introduction</title>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/dist/reveal.css" rel="stylesheet"/> <!-- Reveal -->
+<link href="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/dist/theme/moon.css" rel="stylesheet"/> <!-- Reveal -->
+<link href="https://fonts.googleapis.com/css2?family=Computer+Modern+Serif&amp;display=swap" rel="stylesheet"><!-- Police computer modern (latex) -->
+<!-- STYLE MANIM -->
+<style>
+    body, .reveal {
+      font-family: 'Computer Modern Serif', serif;
+      background-color: black;
+      color: white;
+    }
+    .reveal h2 {font-family: 'Computer Modern Serif', serif; color: rgb(255, 37, 37); font-weight: bold; text-transform: none; font-size: 1.6em; margin-bottom: 0.6em;}
+    .reveal h3 {font-family: 'Computer Modern Serif', serif; color: rgb(22, 161, 22); font-weight: bold; text-transform: none; text-align: left; font-size: 1.3em; margin-bottom: 0.5em; } 
+</style>
+
+<!-- DIVISONS -->
+<style>
+  .definition, .definitions, .defprop, .prop, .theoreme, .exemple, .exemples, .remarque, .mnemo {
+  padding: 0.35em; border-radius: 6px; margin: 0.3em auto; position: relative; text-align: left; max-width: 95%; min-height: 4em;
+  }
+  .definition {border: 2px solid red; background-color: rgba(255, 0, 0, 0.1);}
+  .definitions {border: 2px solid red; background-color: rgba(255, 0, 0, 0.1);}
+  .defprop {border: 2px solid red; background-color: rgba(255, 0, 0, 0.1);}
+  .prop {border: 2px solid red; background-color: rgba(255, 0, 0, 0.1);}
+  .theoreme {border: 2px solid red; background-color: rgba(255, 0, 0, 0.1);}
+  .exemple {border: 2px solid blue; background-color: rgba(0, 21, 255, 0.161);}
+  .exemples {border: 2px solid blue; background-color: rgba(0, 21, 255, 0.161);}
+  .remarque {border: 2px solid orange; background-color: rgba(255, 165, 0, 0.1);}
+  .mnemo {border: 2px solid #711082;; background-color: rgba(210, 14, 204, 0.195);}
+
+  
+  .definition::before, .definitions::before, .defprop::before, .prop::before, .theoreme::before, .exemple::before, .exemples::before, .remarque::before, .mnemo::before {
+    display: block; text-align: left; font-weight: bold; margin-bottom: 0.5em;
+  }
+
+  .definition::before { content: "DÃ©finition :"; color: red; }
+  .definitions::before { content: "DÃ©finitions :"; color: red; }
+  .defprop::before { content: "DÃ©finition / PropriÃ©tÃ© :"; color: red; }
+  .prop::before  { content: "PropriÃ©tÃ© :";  color: red; }
+  .theoreme::before  { content: "ThÃ©orÃ¨me :";  color: red; }
+  .exemple::before   { content: "Exemple :";   color: rgb(77, 77, 236); }
+  .exemples::before   { content: "Exemples :";   color: rgb(77, 77, 236); }
+  .remarque::before  { content: "Remarque :";  color: orange; }
+  .mnemo::before  { content: "MnÃ©motechnie :"; color: #711082; }
+</style>
+
+<!-- CONFIGURATION MATHJAX -->
+<script>
+  window.MathJax = {
+    tex: {
+      inlineMath: [['\\(', '\\)'], ['$', '$']], displayMath: [['\\[', '\\]']],
+      processEscapes: true, packages: ['base', 'ams']
+    },
+    loader: {load: ['[tex]/ams']}, svg: {fontCache: 'global'}
+  };
+</script>
+</head>
+
+
+<body>
+<div class="reveal">
+<div class="slides">
+
+<section data-auto-animate>
+	<p data-id="ing" style="color:yellow; font-size:1.2em; font-weight:bold">Planning de la journée</p>
+</section>
+<section data-auto-animate>
+	<p data-id="ing" style="color:yellow; font-size:1.2em; font-weight:bold">Planning de la journée</p>
+	<ul style="margin-left:-0.6em">
+		<li>Distribution des EDT</li>
+		<li class="fragment">Points administratifs</li>
+		<li class="fragment">Balade dans le lycée</li>
+	</ul>
+</section>
+
+<section data-auto-animate>
+	<p data-id="choix" style="color:yellow; font-size:1.4em; font-weight:bold;">
+		<span style="color:black">Vos</span>
+		<span>choix</span>
+		<span style="color:black">pour votre propre vie.</span>
+	</p>
+</section>
+<section data-auto-animate>
+	<p data-id="choix" style="color:yellow; font-size:1.4em; font-weight:bold;">
+		<span>Vos</span>
+		<span>choix</span>
+		<span>pour votre propre vie</span>
+	</p>
+</section>
+<section data-auto-animate>
+	<p data-id="choix" style="color:yellow; font-size:1.4em; font-weight:bold; margin-bottom:0.7em">
+		<span>Vos</span>
+		<span>choix</span>
+		<span>pour votre propre vie</span>
+	</p>
+	<ul data-id="listechoix" style="margin-left:-0.6em;">
+		<li>l'orientation</li>
+		<li class="fragment">travailler</li>
+	</ul>
+</section>
+<section data-auto-animate>
+	<p data-id="choix" style="color:yellow; font-size:1.4em; font-weight:bold; margin-bottom:0.7em">
+		<span>Vos
+		choix
+		pour votre propre vie</span>
+	</p>
+	<p style="font-style:italic; font-size:0.95em">Écoutez les <span style="border-bottom: 2px solid yellow">conseils</span> de vos professeur·e·s pour :</p>
+	<ul data-id="listechoix" style="margin-left:-0.6em;">
+		<li>l'orientation</li>
+		<li>travailler</li>
+	</ul>
+</section>
+
+
+<section data-auto-animate>
+	<p data-id="work" style="color:white; font-size:1.2em">Travailler</p>
+</section>
+<section data-auto-animate>
+    <p data-id="work" style="color:gray; font-size:1.2em">Travailler</p><br>
+    <p data-id="motivation" style="color:yellow; font-weight:bold; font-size:1.5em; margin-top:-1.3em">Motivation</p>
+</section>
+<section data-auto-animate>
+    <p data-id="motivation" style="color:yellow; font-weight:bold; font-size:1.5em; margin-top:-1.3em">Motivation</p>
+	<p style="font-size:6em; margin-top:-0.3em">🎯</p>
+</section>
+
+
+</div>
+</div>
+
+
+<!-- -->
+<!-- Scripts du body -->
+<!-- -->
+<script src="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/dist/reveal.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-svg.js"></script>
+
+<!-- -->
+<!-- VidÃ©os -->
+<!-- -->
+
+    
+
+
+<!-- Config Reveal -->
+<script>
+    Reveal.initialize({ transition: 'fade', hash: true });
+    const retypeset = (elements = null) => {
+      if (window.MathJax) {
+        MathJax.typesetClear();
+        MathJax.typesetPromise(elements || undefined)
+          .catch(err => console.error("MathJax error:", err.message));
+      }
+    };
+    Reveal.on('ready', () => retypeset());
+    Reveal.on('slidechanged', () => {
+      if (window.MathJax && MathJax.typesetClear && MathJax.typesetPromise) {
+        MathJax.typesetClear(); MathJax.typesetPromise();
+      }
+    });
+    Reveal.on('fragmentshown', event => {
+      const elements = [event.fragment, ...event.fragment.querySelectorAll('*')]; retypeset(elements);
+    });
+</script>
+</body>
+</html>
